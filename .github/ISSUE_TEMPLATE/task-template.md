@@ -1,6 +1,6 @@
 ---
 name: Task template
-about: New task for project
+about: Пустой шаблон для создания задачи
 title: ''
 labels: ''
 assignees: ''
