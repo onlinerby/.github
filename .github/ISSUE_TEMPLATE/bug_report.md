@@ -2,7 +2,7 @@
 name: Bug report
 about: Шаблон описания баг репорта
 title: Краткое описание проблемы, идеально в формате "Что? Где? Когда?"
-labels: bug
+labels: 'bug :bug:'
 assignees: ''
 
 ---
