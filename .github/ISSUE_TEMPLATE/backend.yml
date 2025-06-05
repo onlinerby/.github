@@ -1,5 +1,5 @@
-name: Issue Template_Backend
-description: NEW issue template
+name: Backend task
+description: Шаблон с необходимыми полями для backend задач
 title: "[дд.мм]: "
 labels: ["backend"]
 body:
@@ -18,7 +18,7 @@ body:
       description: Текстовое описание, что нужно сделать в задаче, или ссылка на требования
     validations:
       required: true
- - type: textarea
+  - type: textarea
     id: deploy
     attributes:
       label: План деплоя
@@ -28,12 +28,12 @@ body:
   - type: textarea
     id: backend
     attributes:
-      label: Комментарий Backend 
+      label: Комментарий Backend
     validations:
       required: false
-    - type: textarea
+  - type: textarea
     id: qa
     attributes:
-      label: Комментарий QA 
+      label: Комментарий QA
     validations:
       required: false
