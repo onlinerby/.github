@@ -3,10 +3,6 @@ description: Новый шаблон для багов
 title: "Краткое описание проблемы, идеально в формате Что? Где? Когда?"
 type: "Bug"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Спасибо за ваш отчёт об ошибке! Пожалуйста, заполните поля ниже как можно подробнее.
   - type: input
     id: environment
     attributes:
@@ -66,8 +62,7 @@ body:
     id: logs
     attributes:
       label: Логи / скриншоты / ошибки в консоли
-      description: Приложите, если есть
-      placeholder: Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под спойлер или добавить ссылку на gist
+      description: Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под спойлер или добавить ссылку на gist
       value: |
         Большой текст можно скрыть под spoiler
         
@@ -78,7 +73,6 @@ body:
         Текст внутри раскрывающегося блока
         ```
         </details>
-      render: shell
     validations:
       required: false
   - type: textarea
@@ -91,22 +85,11 @@ body:
         - Тип устройства:
         - ОС и его версия:
         - Браузер и его версия:
-      render: markdown
     validations:
       required: false
   - type: textarea
     id: additional
     attributes:
       label: Дополнительная информация
-    validations:
-      required: false
-  - type: textarea
-    id: deploy
-    attributes:
-      label: План деплоя
-      value: |
-        - [ ] <Название проекта 1>
-        - [ ] <Название проекта 2>
-      render: markdown
     validations:
       required: false
