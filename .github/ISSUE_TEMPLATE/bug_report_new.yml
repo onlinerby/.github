@@ -62,17 +62,7 @@ body:
     id: logs
     attributes:
       label: Логи / скриншоты / ошибки в консоли
-      description: Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под спойлер или добавить ссылку на gist
-      value: |
-        Большой текст можно скрыть под spoiler
-        
-        <details>
-        <summary>Отображаемое название раскрывающегося текста</summary>
-        
-        ```
-        Текст внутри раскрывающегося блока
-        ```
-        </details>
+      description: Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под [спойлер](https://outlinewiki.onliner.org/doc/kak-opisyvat-zadachi-bagi-rekomendacii-JYs86jqyh5#h-dopolnitelьnaya-informaciya-i-ssylki) или добавить ссылку на gist
     validations:
       required: false
   - type: textarea
@@ -81,15 +71,23 @@ body:
       label: Браузер / платформа / версия устройства
       description: Уточните, если баг воспроизводится не везде
       placeholder: 'Например: Chrome 125.0.6422.113 (macOS Sonoma 14.5)'
-      value: |
-        - Тип устройства:
-        - ОС и его версия:
-        - Браузер и его версия:
     validations:
       required: false
   - type: textarea
     id: additional
     attributes:
       label: Дополнительная информация
+    validations:
+      required: false
+  - type: textarea
+    id: bug-priority
+    attributes:
+      label: Критичность бага
+      description: Уточните проритезацию бага, если он из бота. Документация [здесь](https://outlinewiki.onliner.org/doc/prioritizaciya-bagov-iz-bota-b0jqwK3zJe)
+      value: |
+        Критичность 3
+        Частота 4
+        Влияние 3
+        Итоговый приоритет 10 - P2
     validations:
       required: false
