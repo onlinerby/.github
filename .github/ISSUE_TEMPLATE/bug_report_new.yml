@@ -11,31 +11,18 @@ body:
       placeholder: прод и локально
     validations:
       required: true
-  - type: input
-    attributes:
-      label: Ссылка
-      description: Ссылка на основную / связанную задачу, Pull request или на сообщение в боте с багами
-    validations:
-      required: false
-  - type: input
-    id: contact
-    attributes:
-      label: Нужно кого-то уведомить после исправления / деплоя?
-      description: Укажите ник в тг или Имя и Фамилию
-      placeholder: tg @
-    validations:
-      required: false
   - type: textarea
-    id: preconditions
     attributes:
-      label: Предусловия
-      description: Описание необходимого состояния системы до шагов воспроизведения
+      label: С чем связана задача?
+      description: |
+        Ссылка на основную / связанную задачу, Pull request или на сообщение в боте с багами.
+        Ник в telegram или Имя и Фамилия того, кого-то уведомить после исправления / деплоя
     validations:
       required: false
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: Шаги для воспроизведения
+      label: Предусловия и шаги для воспроизведения
       description: Перечислите пошагово, как воспроизвести баг
       placeholder: |
         1. Перейти на страницу ...
@@ -59,35 +46,12 @@ body:
     validations:
       required: true
   - type: textarea
-    id: logs
-    attributes:
-      label: Логи / скриншоты / ошибки в консоли
-      description: Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под [спойлер](https://outlinewiki.onliner.org/doc/kak-opisyvat-zadachi-bagi-rekomendacii-JYs86jqyh5#h-dopolnitelьnaya-informaciya-i-ssylki) или добавить ссылку на gist
-    validations:
-      required: false
-  - type: textarea
-    id: browser-version
-    attributes:
-      label: Браузер / платформа / версия устройства
-      description: Уточните, если баг воспроизводится не везде
-      placeholder: 'Например: Chrome 125.0.6422.113 (macOS Sonoma 14.5)'
-    validations:
-      required: false
-  - type: textarea
     id: additional
     attributes:
-      label: Дополнительная информация
-    validations:
-      required: false
-  - type: textarea
-    id: bug-priority
-    attributes:
-      label: Критичность бага
-      description: Уточните проритезацию бага, если он из бота. Документация [здесь](https://outlinewiki.onliner.org/doc/prioritizaciya-bagov-iz-bota-b0jqwK3zJe)
-      value: |
-        Критичность 3
-        Частота 4
-        Влияние 3
-        Итоговый приоритет 10 - P2
+      label: 'Дополнительная информация: логи / скриншоты / ошибки в консоли / версия браузера и устройства / критичность бага'
+      description: |
+        Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под [спойлер](https://outlinewiki.onliner.org/doc/kak-opisyvat-zadachi-bagi-rekomendacii-JYs86jqyh5#h-dopolnitelьnaya-informaciya-i-ssylki) или добавить ссылку на gist.
+        Уточните, если баг воспроизводится не везде (браузер / платформа / версия устройства).
+        Уточните про приоритезацию бага, если он из бота. Документация [здесь](https://outlinewiki.onliner.org/doc/prioritizaciya-bagov-iz-bota-b0jqwK3zJe)
     validations:
       required: false
