@@ -15,7 +15,7 @@ body:
     attributes:
       label: С чем связана задача?
       description: |
-        Ссылка на основную / связанную задачу, Pull request или на сообщение в боте с багами.
+        Ссылка на основную / связанную задачу, Pull request или на сообщение в боте с багами.  
         Ник в telegram или Имя и Фамилия того, кого-то уведомить после исправления / деплоя
     validations:
       required: false
@@ -50,8 +50,8 @@ body:
     attributes:
       label: 'Дополнительная информация: логи / скриншоты / ошибки в консоли / версия браузера и устройства / критичность бага'
       description: |
-        Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под [спойлер](https://outlinewiki.onliner.org/doc/kak-opisyvat-zadachi-bagi-rekomendacii-JYs86jqyh5#h-dopolnitelьnaya-informaciya-i-ssylki) или добавить ссылку на gist.
-        Уточните, если баг воспроизводится не везде (браузер / платформа / версия устройства).
-        Уточните про приоритезацию бага, если он из бота. Документация [здесь](https://outlinewiki.onliner.org/doc/prioritizaciya-bagov-iz-bota-b0jqwK3zJe)
+        - Вставьте сюда серверные логи (текст и ссылку), ошибки из консоли (текст) или добавьте скриншоты. Большой текст можно спрятать под [спойлер](https://outlinewiki.onliner.org/doc/kak-opisyvat-zadachi-bagi-rekomendacii-JYs86jqyh5#h-dopolnitelьnaya-informaciya-i-ssylki) или добавить ссылку на gist.
+        - Уточните, если баг воспроизводится не везде (браузер / платформа / версия устройства).
+        - Уточните про приоритезацию бага, если он из бота. Документация [здесь](https://outlinewiki.onliner.org/doc/prioritizaciya-bagov-iz-bota-b0jqwK3zJe)
     validations:
       required: false
